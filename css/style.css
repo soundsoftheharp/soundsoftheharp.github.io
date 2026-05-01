@@ -9998,27 +9998,21 @@ h6,
   font-weight: 700;
 }
 
-/* Large background section words: softer and cleaner than the old inline stroke. */
-.section-bg-title {
-  color: transparent !important;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px rgba(52, 58, 64, 0.085);
+/* Large background section words: intentionally faint, using opacity instead of text-stroke.
+   This avoids browser rendering issues where outlined text can turn dark or overlap oddly. */
+.section-bg-title,
+.container .position-relative > h1.display-1.text-white {
+  color: #343a40 !important;
+  -webkit-text-fill-color: #343a40 !important;
+  -webkit-text-stroke: 0 !important;
   text-shadow: none !important;
+  opacity: 0.08;
   font-size: clamp(4rem, 12vw, 8.5rem);
   font-weight: 700;
   line-height: 0.95;
   letter-spacing: 0.02em;
   white-space: nowrap;
-  opacity: 1;
   margin-bottom: 0;
-}
-
-/* Fallback for browsers that do not support text-stroke. */
-@supports not (-webkit-text-stroke: 1px #000000) {
-  .section-bg-title {
-    color: rgba(52, 58, 64, 0.045) !important;
-    -webkit-text-fill-color: rgba(52, 58, 64, 0.045);
-  }
 }
 
 /* Foreground section titles: keep centered and readable on top of the background word. */
@@ -10031,7 +10025,8 @@ h6,
 
 /* Keep the old template section headers from wrapping or looking crowded on smaller screens. */
 @media (max-width: 767.98px) {
-  .section-bg-title {
+  .section-bg-title,
+  .container .position-relative > h1.display-1.text-white {
     font-size: clamp(3.25rem, 16vw, 5.75rem);
     letter-spacing: 0.01em;
   }
@@ -10048,7 +10043,8 @@ h6,
 }
 
 @media (max-width: 420px) {
-  .section-bg-title {
+  .section-bg-title,
+  .container .position-relative > h1.display-1.text-white {
     font-size: clamp(2.85rem, 15vw, 4.5rem);
   }
 
