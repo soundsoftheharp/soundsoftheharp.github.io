@@ -9982,3 +9982,72 @@ h6,
   padding: 0;
   list-style-type: none;
 }
+/* -------------------------------------------------------
+   Rachel Miller site fixes — May 2026
+   ------------------------------------------------------- */
+
+/* Make the main hero name render clearly in every browser. */
+#home .hero-name,
+#home h1.display-3 {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff;
+  -webkit-text-stroke: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  letter-spacing: 0.04em;
+}
+
+/* Make the large background words behind each section visible even
+   where -webkit-text-stroke is not supported. */
+.container .position-relative > h1.display-1.text-white {
+  color: #f3f3f3 !important;
+  -webkit-text-fill-color: #ffffff;
+  -webkit-text-stroke: 1px #e5e5e5;
+  text-shadow:
+    -1px -1px 0 #e5e5e5,
+     1px -1px 0 #e5e5e5,
+    -1px  1px 0 #e5e5e5,
+     1px  1px 0 #e5e5e5;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* Keep section titles readable and centered over the large background words. */
+.container .position-relative > h1.position-absolute.text-uppercase.text-primary {
+  width: 100%;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* The old template uses a very large background word size. Scale it down
+   gently on smaller screens so it does not wrap or collide with the title. */
+@media (max-width: 767.98px) {
+  .container .position-relative > h1.display-1.text-white {
+    font-size: 4.25rem;
+  }
+
+  .container .position-relative > h1.position-absolute.text-uppercase.text-primary {
+    font-size: 1.75rem;
+  }
+
+  #home .hero-name,
+  #home h1.display-3 {
+    font-size: 2.75rem;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media (max-width: 420px) {
+  .container .position-relative > h1.display-1.text-white {
+    font-size: 3.35rem;
+  }
+
+  #home .hero-name,
+  #home h1.display-3 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Safety rule: if any testimonial image tag is re-added later, hide it. */
+.testimonial-carousel img.rounded-circle {
+  display: none !important;
+}
