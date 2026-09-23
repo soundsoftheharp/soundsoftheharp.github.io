@@ -20,7 +20,6 @@
 
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -30,9 +29,9 @@
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
         <a href="index.html" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-primary">Rachel </span>Miller</h1>
+            <span class="m-0 display-5 brand-name">Rachel Miller</span>
         </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
@@ -45,14 +44,14 @@
                 <a href="#testimonial" class="nav-item nav-link">Reviews</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="mailto:rachelmiller272@gmail.com" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
+            <a href="mailto:rachelmiller272@gmail.com" class="btn btn-outline-primary d-none d-lg-block">Inquire</a>
         </div>
     </nav>
     <!-- Navbar End -->
 
 
     <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-label="Performance highlights" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body">
@@ -61,7 +60,7 @@
                     </button>        
                     <!-- 16:9 aspect ratio -->
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                        <iframe class="embed-responsive-item" id="video" title="Rachel Miller harp performance highlights" allow="autoplay" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -75,17 +74,15 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.jpg" alt="">
+                    <div class="hero-portrait shadow-sm"><img src="img/rachel-miller-headshot.jpg" alt="Rachel Miller, Atlanta harpist" width="1536" height="2048"></div>
                 </div>
                 <div class="col-lg-7 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-                    <h1 class="display-3 text-uppercase text-white mb-2 hero-name">RACHEL MILLER</h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <div class="typed-text d-none">Professional Harpist, Harp Teacher, Piano Teacher</div>
+                    <h1 class="display-3 text-white mb-2 hero-name">Rachel Miller</h1>
+                    <p class="hero-subtitle text-white">Atlanta Harpist</p>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="harpist-rachel-miller.pdf" target="_blank" class="btn btn-outline-light mr-5">Download CV</a>
+                        <a href="harpist-rachel-miller.pdf" target="_blank" rel="noopener" class="btn btn-outline-light mr-5">Download CV</a>
                         <button type="button" class="btn-play" data-toggle="modal"
-                            data-src="https://www.youtube.com/embed/PYHeVE5MDpE" data-target="#videoModal">
+                            aria-label="Play Rachel’s performance highlights" data-src="https://www.youtube.com/embed/PYHeVE5MDpE" data-target="#videoModal">
                             <span></span>
                         </button>
                         <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Highlight reel</h5>
@@ -101,16 +98,16 @@
     <div class="container-fluid py-5" id="about">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase section-bg-title">About</h1>
-                <h1 class="position-absolute text-uppercase text-primary section-front-title">About Me</h1>
+                <span class="display-1 text-uppercase section-bg-title" aria-hidden="true">About</span>
+                <h2 class="position-absolute text-uppercase text-primary section-front-title">About Rachel</h2>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
+                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="Rachel Miller with her harp" loading="lazy">
                 </div>
                 <div class="col-lg-7">
                     <h3 class="mb-4">Professional Harpist &amp; Private Teacher</h3>
-                    <p>I've studied music since I was three and played harp since I was 10. I've studied under renowned harpists, graduated from BYU-I's prestigious music program, teach private lessons out of my home, and perform regularly for audiences of all kinds and sizes.</p>
+                    <p>Rachel Miller brings accomplished musicianship and a warm, expressive style to weddings, special events, and private music instruction throughout metro Atlanta. A graduate of Brigham Young University–Idaho’s music program and former principal harpist of its Symphony Orchestra, she has performed with artists including David Archuleta, Nathan Pacheco, and Jenny Oaks Baker. Her musical training began at age three, with harp studies following at age ten. Today, Rachel pairs that depth of experience with a thoughtful, personal approach to every performance and lesson.</p>
                     <div class="row mb-3">
                       <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Rachel Miller</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Instruments: <span class="text-secondary">Harp & Piano</span></h6></div>
@@ -119,7 +116,7 @@
                         <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">rachelmiller272@gmail.com</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Location: <span class="text-secondary">Atlanta, GA</span></h6></div>
                   </div>
-                    <a href="mailto:rachelmiller272@gmail.com" class="btn btn-outline-primary mr-4">Hire Me</a>
+                    <a href="mailto:rachelmiller272@gmail.com" class="btn btn-outline-primary mr-4">Inquire</a>
                   <a href="#qualification" class="btn btn-outline-primary">Learn More</a>
               </div>
             </div>
@@ -132,13 +129,13 @@
     <div class="container-fluid py-5" id="qualification">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase section-bg-title">Resume</h1>
-                <h1 class="position-absolute text-uppercase text-primary section-front-title">Qualifications</h1>
+                <span class="display-1 text-uppercase section-bg-title" aria-hidden="true">Resume</span>
+                <h2 class="position-absolute text-uppercase text-primary section-front-title">Qualifications</h2>
             </div>
 			<div class="row justify-content-center">
               <div class="col-lg-8">
                     <div class="text-center">
-<p>I've studied under renowned harpists including Maria Luisa Rayan, Susan Brady (understudy of Marjorie Tyre & Marilyn Costello), Kimberly Rowe (founding editor of Harp Column Magazine), Judy Loman (understudy of Carlos Salzedo), and Alicia McQuay (understudy of Susann McDonald).</p>
+<p>Rachel has studied with renowned harpists including Maria Luisa Rayan, Susan Brady (understudy of Marjorie Tyre & Marilyn Costello), Kimberly Rowe (founding editor of Harp Column Magazine), Judy Loman (understudy of Carlos Salzedo), and Alicia McQuay (understudy of Susann McDonald).</p>
 						<p>&nbsp;</p>
                   </div>
                 </div>
@@ -223,8 +220,8 @@
     <div class="container-fluid pt-5" id="service">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase section-bg-title">Services</h1>
-                <h1 class="position-absolute text-uppercase text-primary section-front-title">My Services</h1>
+                <span class="display-1 text-uppercase section-bg-title" aria-hidden="true">Services</span>
+                <h2 class="position-absolute text-uppercase text-primary section-front-title">Services</h2>
             </div>
             <div class="row pb-3">
                 <div class="col-lg-4 col-md-6 text-center mb-5">
@@ -232,21 +229,21 @@
                         <i class="fa fa-2x fa-chalkboard-user service-icon bg-primary text-white mr-3"></i>
                         <h4 class="font-weight-bold m-0">Private Lessons</h4>
                     </div>
-                    <p>Students of any age can learn to play the harp, through weekly in-person lessons at my home studio or online.</p>
+                    <p>Rachel offers private harp and piano instruction for students of all ages, with weekly lessons at her home studio or online.</p>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center mb-5">
                     <div class="d-flex align-items-center justify-content-center mb-4">
                         <i class="fa fa-2x fa-church service-icon bg-primary text-white mr-3"></i>
                         <h4 class="font-weight-bold m-0">Weddings</h4>
                     </div>
-                    <p>Looking for a classic, timeless touch? Wedding ceremonies and cocktail hours are a perfect fit for a harp.</p>
+                    <p>Rachel brings a classic, timeless touch to wedding ceremonies, cocktail hours, and receptions with the beauty of live harp music.</p>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center mb-5">
                     <div class="d-flex align-items-center justify-content-center mb-4">
                         <i class="fa fa-2x fa-champagne-glasses service-icon bg-primary text-white mr-3"></i>
                         <h4 class="font-weight-bold m-0">Events</h4>
                     </div>
-                    <p>From corporate events, to art gallery openings, formal dinners and funerals, a harp adds a magic touch to any event.</p>
+                    <p>From corporate events and gallery openings to formal dinners and memorial services, Rachel’s harp music adds an elegant touch to every occasion.</p>
                 </div>
             </div>
         </div>
@@ -258,8 +255,8 @@
     <div class="container-fluid pt-5 pb-3" id="portfolio">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase section-bg-title">Gallery</h1>
-                <h1 class="position-absolute text-uppercase text-primary section-front-title">Photos of me</h1>
+                <span class="display-1 text-uppercase section-bg-title" aria-hidden="true">Gallery</span>
+                <h2 class="position-absolute text-uppercase text-primary section-front-title">Rachel in Performance</h2>
             </div>
             <div class="row">
                 <div class="col-12 text-center mb-2">
@@ -274,62 +271,32 @@
             <div class="row portfolio-container">
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
                     <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
+                        <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="Rachel Miller performing at an event">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
                     <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
+                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="Rachel Miller performing at an event">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
                     <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
+                        <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="Rachel Miller performing at an event">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
                     <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-4.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
+                        <img class="img-fluid rounded w-100" src="img/portfolio-4.jpg" alt="Rachel Miller performing at an event">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
                     <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
+                        <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="Rachel Miller performing at an event">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
                     <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
+                        <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="Rachel Miller performing at an event">
                     </div>
                 </div>
             </div>
@@ -342,31 +309,43 @@
     <div class="container-fluid py-5" id="testimonial">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase section-bg-title">Reviews</h1>
-                <h1 class="position-absolute text-uppercase text-primary section-front-title">Clients Say</h1>
+                <span class="display-1 text-uppercase section-bg-title" aria-hidden="true">Reviews</span>
+                <h2 class="position-absolute text-uppercase text-primary section-front-title">Clients Say</h2>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="owl-carousel testimonial-carousel">
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Rachel plays for my office around the holidays, and for a very special family gathering. She always does a wonderful job.</h4>
-                            <h5 class="font-weight-bold m-0">Doug</h5>
-                            <span>Atlanta, GA</span>
+                            <h4 class="font-weight-light mb-4">Rachel plays for my office around the holidays. She always does a wonderful job.</h4>
+                            <h5 class="font-weight-bold m-0">Chris</h5>
                         </div>
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
                             <h4 class="font-weight-light mb-4">Rachel played during my wedding ceremony. The harp was such a special touch, and I'm so glad I chose Rachel.</h4>
-                            <h5 class="font-weight-bold m-0">Ashetin</h5>
-							<span>Atlanta, GA</span>
+                            <h5 class="font-weight-bold m-0">Amanda</h5>
 
                         </div>
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Rachel played at my wedding at she was such a joy to be around. She brought such a special touch to one of the most important days of my life.</h4>
-                            <h5 class="font-weight-bold m-0">Bethany</h5>
-							<span>Baton Rouge, LA</span>
+                            <h4 class="font-weight-light mb-4">Rachel played at my wedding and she was such a joy to be around. She brought such a special touch to one of the most important days of my life.</h4>
+                            <h5 class="font-weight-bold m-0">Nicole</h5>
 
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Rachel is a family friend, so having her play at our outdoor country club wedding meant a great deal to us. It was her first wedding as a harpist, and it was special to share that milestone with her. Her music is a lovely part of how we remember the day.</h4>
+                            <h5 class="font-weight-bold m-0">McKinley</h5>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Rachel’s harp music was such a lovely fit for our family’s outdoor wedding celebration. There was something so beautiful about hearing the harp in the open air. As the mother-in-law, I’ll always appreciate the warmth she brought to a day that meant so much to our family.</h4>
+                            <h5 class="font-weight-bold m-0">Kathi</h5>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Rachel played as our guests arrived and found their seats, and her music set such a warm, peaceful tone. Before the ceremony even began, the harp made the space feel welcoming and full of anticipation. It was a beautiful way to begin our wedding.</h4>
+                            <h5 class="font-weight-bold m-0">Shirelle</h5>
                         </div>
                     </div>
                 </div>
@@ -383,13 +362,14 @@
     <div class="container-fluid py-5" id="contact">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase section-bg-title">Contact</h1>
-                <h1 class="position-absolute text-uppercase text-primary section-front-title">Get in touch</h1>
+                <span class="display-1 text-uppercase section-bg-title" aria-hidden="true">Contact</span>
+                <h2 class="position-absolute text-uppercase text-primary section-front-title">Get in touch</h2>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="contact-form text-center">
-                                <a class="btn btn-outline-primary" id="sendMessageButton" type="button" href="mailto:rachelmiller272@gmail.com">Email Me</a>
+                        <p class="mb-4">For performance availability or private lessons, contact Rachel with the date, location, and details of the occasion or the student’s musical interests.</p>
+                                <a class="btn btn-outline-primary" id="sendMessageButton" href="mailto:rachelmiller272@gmail.com">Email Rachel</a>
                     </div>
                 </div>
             </div>
@@ -400,11 +380,7 @@
 
     <!-- Footer Start -->
     <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="container text-center py-5">
-            <div class="d-flex justify-content-center mb-4">
-                <a class="btn btn-light btn-social mr-2" href="https://www.facebook.com/rachel.beckelic"><i class="fab fa-facebook-f" style="color: #D2B276"></i></a>
-                <a class="btn btn-light btn-social" href="https://www.instagram.com/rachel.elizabeth.miller/"><i class="fab fa-instagram" style="color: #D2B276"></i></a>
-            </div>
+        <div class="container text-center py-3">
 <p class="m-0">&copy; Rachel Miller. All Rights Reserved. Powered by <a class="text-white font-weight-bold" href="https://roitothesky.com">ROI To The Sky</a>.
             </p>
         </div>
@@ -415,22 +391,16 @@
     <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top" aria-label="Back to top"><i class="fa fa-angle-double-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

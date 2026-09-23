@@ -9926,25 +9926,6 @@ h6,
   border-radius: 60px;
 }
 
-.portfolio-item .portfolio-btn {
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: 50%;
-  left: 50%;
-  border-radius: 4px;
-  opacity: 0;
-  transition: .5s;
-}
-
-.portfolio-item:hover .portfolio-btn {
-  opacity: 1;
-  width: calc(100% - 60px);
-  height: calc(100% - 60px);
-  top: 30px;
-  left: 30px;
-}
-
 .testimonial-carousel .owl-dots {
   margin-top: 25px;
   text-align: center;
@@ -10057,3 +10038,17 @@ h6,
 .testimonial-carousel img.rounded-circle {
   display: none !important;
 }
+
+/* Portrait framing excludes the paper while preserving the original photograph. */
+.hero-portrait { width: 100%; aspect-ratio: 1; border-radius: 50%; overflow: hidden; position: relative; }
+.hero-portrait img { position: absolute; width: 125%; max-width: none; height: auto; left: -15%; top: -15%; }
+.brand-name { color: #343a40; font-size: 1.75rem; font-weight: 700; }
+#home .hero-name { font-size: clamp(2.2rem, 4.7vw, 4rem); letter-spacing: 0; text-transform: none; }
+.hero-subtitle { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 400; margin: 0; }
+#about .text-secondary { overflow-wrap: anywhere; }
+#about p, #service p, #contact p { line-height: 1.8; }
+.section-front-title { color: #806331 !important; }
+.btn-outline-primary { color: #806331; border-color: #806331; }
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link:hover { color: #806331; }
+@media (max-width: 991.98px) { .hero-portrait { max-width: 340px; margin: 0 auto; } }
+@media (prefers-reduced-motion: reduce) { .btn-play::before, .scroll-to-bottom { animation: none; } }
